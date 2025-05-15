@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"
+        integrity="sha512-t38vG/f94E72wz6pCsuuhcOPJlHKwPy+PY+n1+tJFzdte3hsIgYE7iEpgg/StngunGszVMrRfvwZinrza0vMTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <!-- <meta name="viewport" content="width=divice-width, initial-scale=1.0" /> -->
+    <title>materialize Practice</title>
+    <style>
+        .plain-btn button {
+            margin: 3px 0px;
+        }
+
+        .align-btn .btn,
+        .align-btn .btn-flat {
+            position: relative;
+            left: 2rem;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
+        integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Button</h1>
+        <div class="align-btn">
+            <a class="btn">button</a>
+        </div>
+
+        <h2>Buttons with different colors</h2>
+        <div class="plain-btn">
+            <button class="btn">Read More</button>
+            <button class="btn red">Read More</button>
+            <button class="btn pink">Read More</button>
+            <button class="btn purple">Read More</button>
+            <button class="btn deep-purple">Read More</button>
+            <button class="btn indigo">Read More</button>
+            <button class="btn blue">Read More</button>
+            <button class="btn light-blue">Read More</button>
+            <button class="btn cyan">Read More</button>
+            <button class="btn teal">Read More</button>
+            <button class="btn green">Read More</button>
+            <button class="btn light-green">Read More</button>
+            <button class="btn lime">Read More</button>
+            <button class="btn yellow">Read More</button>
+            <button class="btn amber">Read More</button>
+            <button class="btn orange">Read More</button>
+            <button class="btn deep-orange">Read More</button>
+            <button class="btn brown">Read More</button>
+            <button class="btn grey">Read More</button>
+            <button class="btn blue-grey">Read More</button>
+            <button class="btn blue-grey">Read More</button>
+            <button class="btn black">Read More</button>
+            <button class="btn white blue-grey-text text-darken">Read More</button>
+            <button class="btn transparent grey-text text-darken">Read More</button>
+        </div>
+
+        <h2>Button with waves effect</h2>
+        <div class="plain-btn">
+            <button class="btn waves-effect light-green">Read More</button>
+            <button class="btn waves-effect lime">Read More</button>
+            <button class="btn waves-effect yellow">Read More</button>
+            <button class="btn waves-effect amber">Read More</button>
+            <button class="btn waves-effect orange">Read More</button>
+            <button class="btn waves-effect deep-orange">Read More</button>
+            <button class="btn waves-effect black">Read More</button>
+            <button class="btn waves-effect white blue-grey-text text-darken">Read More</button>
+            <button class="btn waves-effect transparent grey-text text-darken">Read More</button>
+        </div>
+
+        <h2>Button with waves effect with light color</h2>
+        <div class="plain-btn">
+            <button class="btn waves-effect waves-light light-green">Read More</button>
+            <button class="btn waves-effect waves-light lime">Read More</button>
+            <button class="btn waves-effect waves-light yellow">Read More</button>
+            <button class="btn waves-effect waves-light amber">Read More</button>
+            <button class="btn waves-effect waves-light orange">Read More</button>
+            <button class="btn waves-effect waves-light deep-orange">Read More</button>
+            <button class="btn waves-effect waves-light black">Read More</button>
+            <button class="btn waves-effect waves-blue white blue-grey-text text-darken">Read More</button>
+            <button class="btn waves-effect waves-green transparent grey-text text-darken">Read More</button>
+        </div>
+
+        <h2>Button with waves effect with solid color</h2>
+        <div class="plain-btn">
+            <button class="btn waves-effect waves-darken light-green light-5">Read More</button>
+            <button class="btn waves-effect waves-darken-4 lime light-3">Read More</button>
+            <button class="btn waves-effect waves-darken yellow lighten-3 black-text">Read More</button>
+            <button class="btn waves-effect waves-darken amber light-3">Read More</button>
+            <button class="btn waves-effect waves-darken orange lighten-3">Read More</button>
+            <button class="btn waves-effect waves-darken deep-orange lighten-3">Read More</button>
+            <button class="btn waves-effect waves-darken black lighten-4">Read More</button>
+            <button class="btn waves-effect waves-blue white blue-grey-text text-darken">Read More</button>
+            <button class="btn waves-effect waves-green transparent grey-text text-darken">Read More</button>
+            <button class="btn waves-effect green light-4 waves-darken-4">Read More</button>
+        </div>
+
+        <!-- Flat button -->
+        <h2>Flat Button</h2>
+        <div class="plain-btn">
+            <button class="waves-effect waves-teal btn-flat">Flat Button</button>
+        </div>
+
+        <!-- Submit button -->
+        <h2>Submit Button</h2>
+        <button class="btn green waves-effect waves-darken" type="submit"><i
+                class="material-icons right">send</i>submit</button>
+
+        <h2>Button with icons left side</h2>
+        <div class="plain-btn">
+            <button class="btn waves-effect waves-darken-4 deep-orange lighten-2 green-text text-darken-3"><i
+                    class="material-icons left">cloud</i>button</button>
+            <button class="btn waves-effect waves-darken-4 deep-orange lighten-2 green-text text-darken-3"><i
+                    class="material-icons left">insert_chart</i>button</button>
+            <button class="btn waves-effect waves-darken-4 deep-orange lighten-2 green-text text-darken-3"><i
+                    class="material-icons left">group</i>button</button>
+            <button class="btn waves-effect waves-darken-4 deep-orange lighten-2 green-text text-darken-3"><i
+                    class="material-icons left">publish</i>button</button>
+            <button class="btn waves-effect waves-darken-4 deep-orange lighten-2 green-text text-darken-3"><i
+                    class="material-icons left">format_quote</i>button</button>
+            <button class="btn waves-effect waves-darken-4 deep-orange lighten-2 green-text text-darken-3"><i
+                    class="material-icons left">attach_file</i>button</button>
+        </div>
+
+        <h2>Button with icons right side</h2>
+        <div class="plain-btn">
+            <button class="btn waves-effect waves-darken-4 deep-orange lighten-2 green-text text-darken-3"><i
+                    class="material-icons right">cloud</i>button</button>
+            <button class="btn waves-effect waves-darken-4 deep-orange lighten-2 green-text text-darken-3"><i
+                    class="material-icons right">insert_chart</i>button</button>
+            <button class="btn waves-effect waves-darken-4 deep-orange lighten-2 green-text text-darken-3"><i
+                    class="material-icons right">group</i>button</button>
+            <button class="btn waves-effect waves-darken-4 deep-orange lighten-2 green-text text-darken-3"><i
+                    class="material-icons right">publish</i>button</button>
+            <button class="btn waves-effect waves-darken-4 deep-orange lighten-2 green-text text-darken-3"><i
+                    class="material-icons right">format_quote</i>button</button>
+            <button class="btn waves-effect waves-darken-4 deep-orange lighten-2 green-text text-darken-3"><i
+                    class="material-icons right">attach_file</i>button</button>
+        </div>
+
+        <h2>Small Buttons</h2>
+        <div class="plain-btn">
+            <button class="btn waves-effect waves-light btn-small">button</button>
+            <button class="btn waves-effect waves-light btn-small"><i
+                    class="material-icons left">cloud</i>button</button>
+            <button class="btn waves-effect waves-light btn-small"><i
+                    class="material-icons right">cloud</i>button</button>
+        </div>
+
+        <h2>Large Buttons</h2>
+        <div class="plain-btn">
+            <button class="btn waves-effect waves-light btn-large">button</button>
+            <button class="btn waves-effect waves-light btn-large"><i
+                    class="material-icons left">cloud</i>button</button>
+            <button class="btn waves-effect waves-light btn-large"><i
+                    class="material-icons right">cloud</i>button</button>
+        </div>
+
+        <h2>Achor tag based buttons</h2>
+        <div class="plain-btn">
+            <a class="waves-effect waves-light btn btn-small">button</a>
+            <a class="waves-effect waves-light btn">button</a>
+            <a class="waves-effect waves-light btn btn-large">button</a>
+        </div>
+
+        <h2>Flat Button</h2>
+        <div class="align-btn">
+            <a class="btn-flat waves-effect waves-red">Button</a>
+        </div>
+
+        <h2>Float Button</h2>
+        <div class="align-btn">
+            <a class="btn-floating btn-small red waves-effect waves-light"><i class="material-icons">add</i></a>
+            <a class="btn-floating red waves-effect waves-light"><i class="material-icons">add</i></a>
+            <a class="btn-floating btn-large red waves-effect waves-light"><i class="material-icons">add</i></a>
+        </div>
+
+        <h2>Disabled buttons</h2>
+        <div class="plain-btn">
+            <a class="btn-small disabled">button</a>
+            <button class="btn waves-effect waves-light disabled">button</button>
+            <a class="btn-large disabled">Button</a>
+            <a class="btn-flat disabled">button</a>
+            <a class="btn-floating disabled"><i class="material-icons">add</i></a>
+        </div>
+
+        <h2>Fixed Action Button</h2>
+        <div class="fixed-action-btn">
+            <a class="btn-floating red waves-effect waves-light btn-large">
+                <i class="material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating yellow btn-large"><i class="large material-icons">insert_chart</i></a></li>
+                <li><a class="large btn-floating blue btn-large"><i class="large material-icons">format_quote</i></a>
+                </li>
+                <li><a class="btn-floating green btn-large"><i class="large material-icons">publish</i></a></li>
+                <li><a class="btn-floating orange btn-large"><i class="large material-icons">attach_file</i></a></li>
+            </ul>
+        </div>
+
+        <!-- <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+            </ul>
+        </div> -->
+
+
+    </div>
+
+    <!-- <script>
+        document.addiventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {hoverEnabled: false});
+        });
+    </script> -->
+
+    <script>
+        document.addiventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+                direction: 'top'
+            });
+        });
+    </script>
+</body>
+
+</html>
