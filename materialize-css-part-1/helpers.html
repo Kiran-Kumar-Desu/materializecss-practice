@@ -15,6 +15,29 @@
         div .width {
             width: 50%;
         }
+
+        .shadow-demo {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            vertical-align: middle;
+            background: darkorange;
+            margin: 20px 0px;
+        }
+
+        .div-shadow-card {
+            display: flex;
+            justify-content: center;
+        }
+
+        .shadow-card-align {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
     </style>
 
     <!--Let browser know website is optimized for mobile-->
@@ -110,7 +133,10 @@
         <h2>Formatting</h2>
         <h3>Truncation</h3>
 
-        <h4 class="truncate">Hypertext Markup Language (HTML) is the standard markup language[a] for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript, a programming language.</h4>
+        <h4 class="truncate">Hypertext Markup Language (HTML) is the standard markup language[a] for documents designed
+            to be displayed in a web browser. It defines the content and structure of web content. It is often assisted
+            by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript, a
+            programming language.</h4>
 
         <h2>Hoverable</h2>
         <div class="red white-text hoverable">Hoverable Content</div>
@@ -119,28 +145,59 @@
         <div class="blue-grey white-text pulse">Pulsable card</div>
 
 
-        
+
         <div class="divider"></div>
-        
+
         <h2>Shadows</h2>
         <div class="row">
-            <div class="teal col s12 m4 l2">
-                <p class="z-depth-1">z-depth-1</p>
+            <div class="col s12 m4 l2">
+                <p class="z-depth-0 shadow-demo">z-depth-0</p>
             </div>
-            <div class="teal col s12 m4 l2">
-                <p class="z-depth-2">z-depth-2</p>
+            <div class="col s12 m4 l2">
+                <p class="z-depth-1 shadow-demo">z-depth-1</p>
             </div>
-            <div class="teal col s12 m4 l2">
-                <p class="z-depth-3">z-depth-3</p>
+            <div class="col s12 m4 l2">
+                <p class="z-depth-2 shadow-demo">z-depth-2</p>
             </div>
-            <div class="teal col s12 m4 l2">
-                <p class="z-depth-4">z-depth-4</p>
+            <div class="col s12 m4 l2">
+                <p class="z-depth-3 shadow-demo">z-depth-3</p>
             </div>
-            <div class="teal col s12 m4 l2">
-                <p class="z-depth-5">z-depth-5</p>
+            <div class="col s12 m4 l2">
+                <p class="z-depth-4 shadow-demo">z-depth-4</p>
+            </div>
+            <div class="col s12 m4 l2">
+                <p class="z-depth-5 shadow-demo">z-depth-5</p>
             </div>
         </div>
-        
+
+
+        <h2>Flow Text</h2>
+        <div class="card-panel">
+            <p>HTML is a markup language that web browsers use to interpret and compose text, images, and other material into visible or audible web pages. Default characteristics for every item of HTML markup are defined in the browser, and these characteristics can be altered or enhanced by the web page designer's additional use of CSS. Many of the text elements are mentioned in the 1988 ISO technical report TR 9537 Techniques for using SGML, which describes the features of early text formatting languages such as that used by the RUNOFF command developed in the early 1960s for the CTSS (Compatible Time-Sharing System) operating system. These formatting commands were derived from the commands used by typesetters to manually format documents. However, the SGML concept of generalized markup is based on elements (nested annotated ranges with attributes) rather than merely print effects, with separate structure and markup. HTML has been progressively moved in this direction with CSS.</p>
+        </div>
+
+
+        <div class="row red lighten-3">
+            <div class="col s6 m4 l2 div-shadow-card">
+                <p class="red darken-3 z-depth-0 shadow-card-align">z-depth-0</p>
+            </div>
+            <div class="col s6 m4 l2 div-shadow-card">
+                <p class="red darken-3 z-depth-1 shadow-card-align">z-depth-1</p>
+            </div>
+            <div class="col s6 m4 l2 div-shadow-card">
+                <p class="red darken-3 z-depth-2 shadow-card-align">z-depth-2</p>
+            </div>
+            <div class="col s6 m4 l2 div-shadow-card">
+                <p class="red darken-3 z-depth-3 shadow-card-align">z-depth-3</p>
+            </div>
+            <div class="col s6 m4 l2 div-shadow-card">
+                <p class="red darken-3 z-depth-4 shadow-card-align">z-depth-4</p>
+            </div>
+            <div class="col s6 m4 l2 div-shadow-card">
+                <p class="red darken-3 z-depth-5 shadow-card-align">z-depth-5</p>
+            </div>
+        </div>
+
         <div style="height: 500px;"></div>
 
 
