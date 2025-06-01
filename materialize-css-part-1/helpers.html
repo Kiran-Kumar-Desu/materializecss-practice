@@ -19,10 +19,11 @@
         .shadow-demo {
             width: 100px;
             height: 100px;
-            text-align: center;
-            vertical-align: middle;
             background: darkorange;
-            margin: 20px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
         }
 
         .div-shadow-card {
@@ -43,13 +44,10 @@
     <!--Let browser know website is optimized for mobile-->
     <title>materialize Practice</title>
 
-    <script src="https://code.jquery.com/jquery-2.2.4.js"
-        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" crossorigin="anonymous"></script>
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
-        integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Contact at end of body for optimized loading-->
+    <script src="../materialize/js/materialize.js"></script>
 </head>
 
 <body>
@@ -135,7 +133,7 @@
 
         <h4 class="truncate">Hypertext Markup Language (HTML) is the standard markup language[a] for documents designed
             to be displayed in a web browser. It defines the content and structure of web content. It is often assisted
-            by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript, a
+            by technologies such as Cascading Style Sheets (CSS) and scripting languages such as Contact, a
             programming language.</h4>
 
         <h2>Hoverable</h2>
@@ -173,7 +171,16 @@
 
         <h2>Flow Text</h2>
         <div class="card-panel">
-            <p>HTML is a markup language that web browsers use to interpret and compose text, images, and other material into visible or audible web pages. Default characteristics for every item of HTML markup are defined in the browser, and these characteristics can be altered or enhanced by the web page designer's additional use of CSS. Many of the text elements are mentioned in the 1988 ISO technical report TR 9537 Techniques for using SGML, which describes the features of early text formatting languages such as that used by the RUNOFF command developed in the early 1960s for the CTSS (Compatible Time-Sharing System) operating system. These formatting commands were derived from the commands used by typesetters to manually format documents. However, the SGML concept of generalized markup is based on elements (nested annotated ranges with attributes) rather than merely print effects, with separate structure and markup. HTML has been progressively moved in this direction with CSS.</p>
+            <p>HTML is a markup language that web browsers use to interpret and compose text, images, and other material
+                into visible or audible web pages. Default characteristics for every item of HTML markup are defined in
+                the browser, and these characteristics can be altered or enhanced by the web page designer's additional
+                use of CSS. Many of the text elements are mentioned in the 1988 ISO technical report TR 9537 Techniques
+                for using SGML, which describes the features of early text formatting languages such as that used by the
+                RUNOFF command developed in the early 1960s for the CTSS (Compatible Time-Sharing System) operating
+                system. These formatting commands were derived from the commands used by typesetters to manually format
+                documents. However, the SGML concept of generalized markup is based on elements (nested annotated ranges
+                with attributes) rather than merely print effects, with separate structure and markup. HTML has been
+                progressively moved in this direction with CSS.</p>
         </div>
 
 
@@ -198,12 +205,143 @@
             </div>
         </div>
 
-        <div style="height: 500px;"></div>
+        <h3>Responsive img</h3>
+
+        <img src="https://banner2.cleanpng.com/20180325/ixw/av0a7ggzs.webp" alt="" class="responsive-img">
+        <img src="https://banner2.cleanpng.com/20180325/ixw/av0a7ggzs.webp" alt="" class="responsive-img circle">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/NG_Logo_1024x768.png" alt=""
+            class="responsive-img">
+
+
+
+
 
 
 
 
     </div>
+
+    <h4>Navigations</h4>
+    <div class="divider"></div>
+    <br>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"> logo
+                <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/NG_Logo_1024x768.png" alt="" class="responsive-img"> -->
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h4>right logo</h4>
+    <div class="divider"></div>
+    <br>
+
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="#" class="brand-logo right"> logo</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h4>center logo</h4>
+    <div class="divider"></div>
+    <br>
+
+    <nav>
+        <div class="nav-wrapper green">
+            <a href="#" class="brand-logo center"> logo</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h4>dropdown in nav bar</h4>
+    <div class="divider"></div>
+    <br>
+
+    <!-- dropdown -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Three</a></li>
+    </ul>
+
+    <nav>
+        <div class="nav-wrapper purple">
+            <a href="#" class="brand-logo center"> logo</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br><br></br>
+
+    <h2>Search in navbar</h2>
+    <div class="divider"></div>
+
+    <br><br>
+
+    <nav>
+        <div class="nav-wrapper orange accent-3">
+            <form>
+                <div class="input-field">
+                    <input id="search" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <h2>Mobile collapsable button</h2>
+    <div class="divider"></div>
+    <br><br>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div style="height: 500px;"></div>
 </body>
+
+<script>
+    $(document).ready(function () {
+        $('.sidenav').sidenav();
+        $(".dropdown-trigger").dropdown({ hover: false });
+    });
+</script>
 
 </html>
